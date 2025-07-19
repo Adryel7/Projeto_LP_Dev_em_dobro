@@ -78,7 +78,8 @@ footer{
 .servicos{
     display: grid;
     grid:
-    "servico_1 servico_2" 65vh;
+    "servico_1 servico_2";
+
 }
 
 .servico_1{
@@ -92,8 +93,10 @@ footer{
 @media (max-width: 600px){
     .servicos{
         grid:
-        "servico_1" 70vh
-        "servico_2" 70vh;
+        "servico_1"
+        "servico_2";
+
+        text-align: center;
     }
 }
 

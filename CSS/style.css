@@ -149,6 +149,7 @@ header ul li a:hover{
 /* SERVIÇOS */
 .servicos{
     text-align: center;
+
 }
 
 
@@ -163,7 +164,7 @@ header ul li a:hover{
 }
 
 .servicos p{
-    padding: 30px 20% 0px;
+    padding: 30px 20% 30px;
     font-size: 2rem;
     font-weight: 400;
     line-height: 25px;
