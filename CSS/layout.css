@@ -1,0 +1,118 @@
+/* GERAL */
+
+body{
+    display: grid;
+    grid:
+    "header"
+    "hero"
+    "noticias"
+    "servicos"
+    "projetos"
+    "footer"
+}
+
+header{
+    grid-area: header;
+}
+.hero{
+    grid-area: hero;
+}
+.noticias{
+    grid-area: noticias;
+}
+.servicos{
+    grid-area: servicos;
+}
+.projetos{
+    grid-area: projetos;
+}
+footer{
+    grid-area: footer;
+}
+
+/* NOTICIAS */
+
+.noticias{
+    display: grid;
+    grid:
+    "not1 foto1"
+    "foto2 not2";
+}
+
+.not1{
+    grid-area: not1;
+}
+
+.not2{
+    grid-area: not2;
+}
+
+.foto1{
+    grid-area: foto1;
+}
+
+.foto2{
+    grid-area: foto2;
+}
+
+.foto img{
+    height: 50vh;
+    width: 50vw;
+}
+
+@media (max-width: 600px){
+    .noticias{
+        grid:
+        "not1"
+        "foto1"
+        "not2"
+        "foto2"
+    }
+
+    .foto img{
+    height: auto;
+    width: auto;
+}
+}
+
+.servicos{
+    display: grid;
+    grid:
+    "servico_1 servico_2" 65vh;
+}
+
+.servico_1{
+    grid-area: servico_1; 
+}
+
+.servico_2{
+    grid-area: servico_2; 
+}
+
+@media (max-width: 600px){
+    .servicos{
+        grid:
+        "servico_1" 70vh
+        "servico_2" 70vh;
+    }
+}
+
+.projetos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+@media (max-width: 900px){
+    .projetos{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px){
+    .projetos{
+        grid-template-columns: 1fr;
+    }
+}
+
+

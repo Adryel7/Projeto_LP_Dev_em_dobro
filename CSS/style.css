@@ -1,0 +1,235 @@
+body{
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+    height: 100%;
+}
+
+/* HEADER */
+
+header{
+    
+    padding: 30px;
+    
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header h1{
+    font-size: 3rem;
+    font-weight: 700;
+    transition: .3s;
+}
+
+header a:hover h1{
+    color: coral ;
+}
+
+header ul{
+    display: flex;
+
+    align-items: center;
+    justify-content: end;
+
+    gap:5px;
+}
+
+header ul li a{
+    padding: 10px 30px;
+
+    font-size: 2rem;
+    font-weight: 500;
+
+    border-radius: 50px;
+    transition: .3s;
+}
+
+header ul li a:hover{
+    color: #FFFFFF;
+    background-color: coral;
+}
+
+/* HERO */
+
+.hero{
+    height: 89vh;
+    background: url('../images/lemons.jpg') center center no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.hero h2{
+    font-weight: 500;
+    text-transform: uppercase;font-size: 4rem;
+}
+
+.hero:after{
+    content: url('../images/seta_preta.png');
+
+    position: absolute;
+
+    height: 35px;
+    bottom: 40px;
+
+    animation: downarrow .6s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes downarrow {
+    0% {-webkit-transform: translateY(0);opacity: .4; }
+    100% {-webkit-transform: translateY(1em); opacity: .9; }
+}
+
+@media (max-width:450px){
+    .hero{
+        height: 60vh;
+    }
+    .hero h2{
+        font-size: 2.5rem;
+    }
+    
+    .hero:after{
+        display: none;
+    }
+}
+
+/* NOTICIAS */
+
+.noticias{
+    max-width: var(--max-width-size);
+    
+    margin: 0;
+
+    background-color: #FFFFFF;
+}
+
+.noticias picture img{
+    width: 100%;
+    height: 100%;
+}
+
+.noticias .not{
+    padding: 10% 20%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.noticias .not h3{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.noticias .not p{
+    font-size: 1.4rem;
+}
+
+.noticias .not a{
+    font-size: 1.2rem;
+    align-self: flex-start;
+}
+
+.noticias .not a:hover{
+    font-weight: 700;
+}
+
+/* SERVIÇOS */
+.servicos{
+    text-align: center;
+}
+
+
+.servicos img{
+    width: 250px;
+    margin: 5% 0px 5%;
+}
+
+.servicos h3{
+    font-size: 1.8rem;
+    font-weight: 700px;
+}
+
+.servicos p{
+    padding: 30px 20% 0px;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 25px;
+
+    text-align: center;
+}
+
+.servicos .servico_1{
+    background-color: lightskyblue;
+}
+
+.servicos .servico_2{
+    background-color: lightpink;
+}
+.projetos img{
+    height: 100%;
+    width: 100%;
+}
+.projetos a:hover{
+    opacity: .8;
+    transition: .3s;
+}
+
+footer{
+    padding: 100px;
+
+    background-color: lightgreen;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+footer h4{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+footer .menu ul{
+    display: flex;
+
+    max-width: 320px;
+
+    gap: 40px;
+}
+
+footer .menu ul a{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+footer .menu li a:hover{
+    font-weight: 700;
+    color: #FFFFFF;
+    transition: .3s;
+}
+
+footer .social{
+    display: flex;
+    font-size: 2rem;
+    gap: 40px;
+}
+
+footer .social a:hover{
+    color: #FFFFFF;
+    transition: .3s;
+}
