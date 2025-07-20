@@ -78,7 +78,41 @@ header input:checked ~ label .hamburguer::after{
         position: absolute;
         top: 20px;
         right: 20px;
-        z-index: 1;
+        z-index:1;
+    }
+
+    header nav ul{
+        width: 200px;
+    }
+
+    header nav ul a{
+        display: block;
+        text-align: center;
+
+        padding: 20px;
+    }
+}
+
+@media(max-width:500px){
+
+    header .menu{
+       display: block;
+    }
+
+    header nav ul{
+        display: none;
+        position: relative;
+    }
+
+    header input:checked ~ ul{
+        display: block;
+    }
+
+    header nav{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index:1;
     }
 
     header nav ul{
