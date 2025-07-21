@@ -1,35 +1,3 @@
-/* GERAL */
-
-main{
-    display: grid;
-    grid:
-    "header"
-    "hero"
-    "noticias"
-    "servicos"
-    "projetos"
-    "footer"
-}
-
-header{
-    grid-area: header;
-}
-.hero{
-    grid-area: hero;
-}
-.noticias{
-    grid-area: noticias;
-}
-.servicos{
-    grid-area: servicos;
-}
-.projetos{
-    grid-area: projetos;
-}
-footer{
-    grid-area: footer;
-}
-
 /* NOTICIAS */
 
 .noticias{
